@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'sora';
+}
+
+body{
+  background-color: #f5f5f5;
+}
+
+.instagram{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.phone{
+  width: 50%;
+}
+
+.login{
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+
+.form{
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  max-height: 450px;
+  margin: 10px auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo{
+  margin-top: 40px;
+}
+
+.form form{
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.form form input{
+  width: 100%;
+  height: 40px;
+  padding: .5rem;
+  margin: 5px 0;
+  outline: none;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form input::placeholder{
+  opacity: .8;
+  font-size: 12px;
+}
+
+form #btn{
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  background-color: #0095f6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+
+div.ou{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #aaaa;
+}
+
+.border{
+  width: 100%;
+  max-width: 150px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+
+.links .fb{
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
+  color: #385185;
+  font-size: 15px;
+}
+
+.links .esq{
+  font-size: 14px;
+  text-decoration: none;
+  color: #385185;
+}
+
+/* Esqueceu a senha */
+.sem-conta{
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  max-height: 60px;
+  margin: auto;
+  max-width: 320px;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.flex a{
+  text-decoration: none;
+  color: #385185;
+}
+
+.obter{
+  text-align: center;
+  margin: 15px 0;
+}
+
+.obter p{
+  font-size: 14px;
+}
+
+.apps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+.apps img{
+  max-width: 130px;
+}
+
+.screen{
+  position: relative;
+}
+
+.screen img{
+  position: absolute;
+  top: -615px;
+  left: 155px;
+}
+
+.screen img{
+  visibility: hidden;
+}
+
+.screen img.ativo{
+  visibility: visible;
+  animation: slide 3s ease-in;
+}
+
+@keyframes slide{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 800px){
+  .phone{
+    display: none;
+  }
+
+  .login{
+    width: 100%;
+    padding: 1%;
+  }
+}
